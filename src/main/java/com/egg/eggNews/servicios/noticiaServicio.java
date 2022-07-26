@@ -2,6 +2,7 @@
 package com.egg.eggNews.servicios;
 
 import com.egg.eggNews.repositorios.NoticiaRepositorio;
+import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
@@ -9,4 +10,9 @@ public class noticiaServicio {
     
     @Autowired
     private NoticiaRepositorio noticiaRepositorio;
+    
+    @Transactional
+    public void crearNoticia(String titulo){
+        
+    }
 }
